@@ -2,17 +2,20 @@ import express from "express";
 import { mockUsers } from "./constants.mjs";
 import resolveIndexByUserId from "./MiddleWare/middlewares.mjs";
 import router from "./Routes/index.mjs";
+import cookieParser from "cookie-parser";
+
 const app = express();
 
 app.use(express.json());
+app.use(cookieParser("Hello World"));
 app.use(router)
 
 
 const PORT = process.env.PORT || 3000;
 
 app.get("/", (req, res) => {
-  console.log("hey gpt  ");
-  res.status(200).send("hedas");
+  res.cookie("Hello","World",{maxAge:10000 , signed: true})
+  res.status(200).send("Kya hall hai bhai Kaisa hai launde");
 });
 
 

@@ -7,7 +7,7 @@ const resolveIndexByUserId = (req, res, next) => {
     } = req;
     const parsedId = parseInt(id);
     if (isNaN(parsedId)) {
-      return res.sendStatus(400);
+      return res.sendStatus(400);  
     }
   
     const findUserIndex = mockUsers.findIndex((user) => user.id === parsedId);
