@@ -1,6 +1,6 @@
 import { Router } from "express";
 import { query, validationResult, matchedData , checkSchema } from "express-validator";
-import { mockUsers } from "../constants.mjs";
+import { mockUsers } from "../utils/constants.mjs";
 import { createUserValidationSchema } from "../utils/validationSchema.mjs";
 import resolveIndexByUserId from "../MiddleWare/middlewares.mjs";
 
@@ -8,7 +8,7 @@ const userRouter = Router();
 
 userRouter.get(
   "/api/users",
-  query("filter")
+  query("filter") 
     .isString()
     .notEmpty()
     .withMessage("Must not be Empty")

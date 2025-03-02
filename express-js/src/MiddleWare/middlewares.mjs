@@ -1,4 +1,4 @@
-import { mockUsers } from "../constants.mjs";
+import { mockUsers } from "../utils/constants.mjs";
 
 const resolveIndexByUserId = (req, res, next) => {
     const {
