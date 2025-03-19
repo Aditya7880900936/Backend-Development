@@ -1,0 +1,22 @@
+// versioning 
+
+// 4.21.2
+
+first part -> 4
+second part -> 21
+third part -> 2 
+
+// 3rd Part (Last PArt ) -
+Minor Fixes (Optional Updates like small bugs(eg typo or small bugs))
+
+// 2nd Part -> 
+Recommended Bugs fixed (Critical Security Bugs Fixed) should be updated 
+
+// 1st Part -> 
+Major Release -> Major / Breaking Update 
+                         
+^ This symbol indicates that the first part should not be 
+changed either give the latest version of second and third part
+
+~ this symbol stops the change of first and second part
+ and updates the third part
